@@ -1,0 +1,30 @@
+div {
+  /* transition-property: opacity, transform;
+  transition-duration: 1s;
+  transition-timing-function: ease-in-out;
+  transition-delay: 3s, 10ms; 
+  SHORTHAND: */
+  transition: opacity 1s ease, transform 1s ease;
+}
+
+div:hover {
+  opacity: 1;
+  transform: translateX(20px);
+}
+
+
+//em caso de reduced motions:
+
+@media (prefers-reduced-motion: reduce) {
+  div {
+    transition: none;
+  }
+}
+
+//transition-property lida com quais propriedades serão transicionadas, sendo que o valor padrão é all, ou seja, todas as propriedades serão transicionadas, para casos onde mais de uma especificação é necessária, é necessário separar por vírgula.
+
+//transition-duration lida com a duração da transição, sendo que o valor padrão é 0s, ou seja, não haverá transição, para casos onde mais de uma especificação é necessária, é necessário separar por vírgula.
+
+//transition-timing-function lida com a função de tempo da transição, sendo que o valor padrão é ease, para casos onde mais de uma especificação é necessária, é necessário separar por vírgula.
+
+//transition-delay lida com o atraso da transição, sendo que o valor padrão é 0s, ou seja, não haverá atraso, para casos onde mais de uma especificação é necessária, é necessário separar por vírgula.
