@@ -1,0 +1,76 @@
+/* Animações no CSS são mudanças de propriedades com base na linha do tempo, criada com @keyframes */
+
+/* Exemplo básico de animação */
+button {
+    animation: move 1s 1s both infinite alternate;
+}
+
+/* Definindo a animação com @keyframes */
+@keyframes move {
+    0% {
+        background-color: red;
+    }
+    100% {
+        transform: translateX(200px);
+    }
+}
+
+/* Explicação:
+   - animation: move 1s 1s both infinite alternate;
+     - move: nome da animação definida com @keyframes
+     - 1s: duração da animação
+     - 1s: atraso antes de iniciar a animação
+     - both: aplica as propriedades da animação tanto no início quanto no fim
+     - infinite: a animação se repete infinitamente
+     - alternate: a animação alterna entre o estado inicial e final
+*/
+
+/* Exemplo adicional: Mudança de cor e tamanho */
+button.size-color-change {
+    animation: sizeColorChange 2s ease-in-out infinite;
+}
+
+@keyframes sizeColorChange {
+    0% {
+        background-color: blue;
+        transform: scale(1);
+    }
+    50% {
+        background-color: green;
+        transform: scale(1.5);
+    }
+    100% {
+        background-color: blue;
+        transform: scale(1);
+    }
+}
+
+/* Explicação:
+   - animation: sizeColorChange 2s ease-in-out infinite;
+     - sizeColorChange: nome da animação definida com @keyframes
+     - 2s: duração da animação
+     - ease-in-out: a animação começa e termina lentamente
+     - infinite: a animação se repete infinitamente
+*/
+
+/* Exemplo adicional: Rotação */
+button.rotate {
+    animation: rotate 3s linear infinite;
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/* Explicação:
+   - animation: rotate 3s linear infinite;
+     - rotate: nome da animação definida com @keyframes
+     - 3s: duração da animação
+     - linear: a animação tem uma velocidade constante
+     - infinite: a animação se repete infinitamente
+*/
