@@ -3,30 +3,28 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Snitap</title>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="./styles/index.css">
-    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
-
     <link
-        href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,500;1,14..32,500&family=Montserrat:ital,wght@0,500;1,500&family=Syne:wght@700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Syne:wght@400..800&display=swap"
         rel="stylesheet">
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snitap Patins</title>
+    <link rel="shortcut icon" href="./assets/logo.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/index.css">
 </head>
 
 <body>
-    <header>
+    <header class="top">
         <a href="#">
-            <img src="./assets/logo.svg" alt="logo" title="Logo da marca."/>
+            <img src="./assets/logo.svg" alt="logo">
         </a>
         <a href="#">
-            <img src="./assets/icons/shopping-bag-01.svg" alt="Icone de carrinho." title="Icone que redireciona ao carrinho."/>
-            <span>1</span>
-        </a>    
+            <img src="./assets/icons/shopping-bag-01.svg" alt="shopping_bag">
+            <span>0</span>
+        </a>
     </header>
+
     <section class="hero">
         <div>
             <h1>
@@ -34,33 +32,125 @@
                 <div>
                     <span>radical</span>
                     <span>divertida</span>
-                    <span>saudável </span>
+                    <span>saudavel</span>
                     <span>radical</span>
                 </div>
             </h1>
-        <div class="buttons">
-            <a href="#" class="button buy">
-                <img src="./assets/icons/shopping-bag-01.svg"/>
-                Comprar Agora
-            </a>
-            <a href="#" class="button play" >
-                <span class="shadow">
-                    <img src="./assets/icons/play.svg"/>
-                </span>
-                VEJA EM AÇÃO
-            </a>
-        </div>
+
+            <div class="buttons">
+                <a href="#" class="button buy shadow">
+                    <img src="./assets/icons/shopping-bag-01.svg" alt="">
+                    COMPRAR AGORA
+                </a>
+                <a href="#" class="button play">
+                    <span class="shadow">
+                        <img src="./assets/icons/play.svg" alt="">
+                    </span>
+                    VEJA EM ACAO
+                </a>
+            </div>
         </div>
 
         <div>
             <div class="content">
-                <img src="./assets/hero/elipse.svg"/>
-                <img src="./assets/hero/patins.png"/>
-                <img src="./assets/hero/stars-1.svg"/>
-                <img src="./assets/hero/stars-2.svg"/>
+                <img src="./assets/hero/elipse.svg" alt="Ellipse">
+                <img src="./assets/hero/patins.png" alt="Patins">
+                <img src="./assets/hero/stars-1.svg" alt="stars">
+                <img src="./assets/hero/stars-2.svg" alt="stars">
             </div>
         </div>
     </section>
+
+    <section class="banner">
+        <div class="scroller bg-gradient-animate">
+            <div class="rolling">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+                <img src="./assets/banner.svg" alt="patins with star">
+            </div>
+        </div>
+    </section>
+
+    <section class="gallery">
+        <header>
+            <span>GALERIA DE FOTOS</span>
+            <h2>#usesnitap por ai</h2>
+        </header>
+
+        <div class="content">
+            <figure>
+                <img src="./assets/images/image 01.png" alt="">
+                <figcaption>
+                    <img src="./assets/images/person.png" alt="">
+                    <span>@laviniapereira</span>
+                </figcaption>
+            </figure>
+            <figure data-delay>
+                <img src="./assets/images/image 02.png" alt="">
+                <figcaption>
+                    <img src="./assets/images/person.png" alt="">
+                    <span>@laviniapereira</span>
+                </figcaption>
+            </figure>
+            <figure>
+                <img src="./assets/images/image 03.png" alt="">
+                <figcaption>
+                    <img src="./assets/images/person.png" alt="">
+                    <span>@laviniapereira</span>
+                </figcaption>
+            </figure>
+            <figure data-delay>
+                <img src="./assets/images/image 04.png" alt="">
+                <figcaption>
+                    <img src="./assets/images/person.png" alt="">
+                    <span>@laviniapereira</span>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <footer>
+        <div class="logo">
+            <img src="./assets/icons/logo.svg" alt="logo snitap">
+            Snitap
+        </div>
+
+        <nav>
+            <a href="#">Sobre</a>
+            <a href="#">Nossas lojas</a>
+            <a href="#">Politica de privacidade</a>
+        </nav>
+
+            <div class="social-links">
+                <a href="#" title="Facebook">
+                    <img src="./assets/icons/facebook.svg" alt="logo facebook">
+                </a>
+                <a href="#" title="Instagram">
+                    <img src="./assets/icons/instagram.svg" alt="logo instagram">
+                </a>
+                <a href="#" title="TikTok">
+                    <img src="./assets/icons/tiktok.svg" alt="logo tiktok">
+                </a>
+                <a href="#" title="Youtube">
+                    <img src="./assets/icons/youtube.svg" alt="logo youtube">
+                </a>
+            </div>
+    </footer>
 </body>
 
 </html>

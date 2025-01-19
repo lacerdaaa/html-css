@@ -32,7 +32,6 @@ h1, h2 {
     font-family: 'Syne', sans-serif;
 }
 
-html { zoom: .7}
 
 h1 {
     font-size: var(--text-xl);
